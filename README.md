@@ -17,7 +17,6 @@ own applications.
 ## Experiments on CIFAR10
 image classification tricks on CIFAR10, [refer to](https://arxiv.org/pdf/1812.01187.pdf)[1]
 
-
 |                 **Heuristic**                 |   mAP@1    |    Lift    |
 | :-------------------------------------------: | :--------: | :--------: |
 |                   ResNet32                    |   92.40%   |     BL     |
