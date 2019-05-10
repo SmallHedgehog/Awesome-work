@@ -24,7 +24,7 @@ GPU_ID = '4'
 os.environ['CUDA_VISIBLE_DEVICES'] = GPU_ID
 
 
-parser = argparse.ArgumentParser(description='Gradient Harmonized in Classify')
+parser = argparse.ArgumentParser(description='CosineAnnealing with resnet32 architecture')
 parser.add_argument('--config', default='experiments/cifar10-weightdecay/config.yaml')
 
 

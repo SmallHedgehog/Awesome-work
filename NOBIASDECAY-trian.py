@@ -24,7 +24,7 @@ GPU_ID = '4'
 os.environ['CUDA_VISIBLE_DEVICES'] = GPU_ID
 
 
-parser = argparse.ArgumentParser(description='Mixup augmentation')
+parser = argparse.ArgumentParser(description='NoBiasDecay on ResNet32')
 parser.add_argument('--config', default='experiments/cifar10-nobiasdecay/config.yaml')
 
 

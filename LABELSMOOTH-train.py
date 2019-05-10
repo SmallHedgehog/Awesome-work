@@ -24,7 +24,7 @@ GPU_ID = '4'
 os.environ['CUDA_VISIBLE_DEVICES'] = GPU_ID
 
 
-parser = argparse.ArgumentParser(description='Training Refinements with label smoothing')
+parser = argparse.ArgumentParser(description='Training Refinements with label smoothing on ResNet32')
 parser.add_argument('--config', default='experiments/cifar10-labelsmoothing/config.yaml')
 
 

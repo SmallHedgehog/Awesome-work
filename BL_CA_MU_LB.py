@@ -26,7 +26,7 @@ GPU_ID = '3'
 os.environ['CUDA_VISIBLE_DEVICES'] = GPU_ID
 
 
-parser = argparse.ArgumentParser(description='Gradient Harmonized in Classify')
+parser = argparse.ArgumentParser(description='ResNet32+CosineAnnealing+Mixup+LabelSmoothing')
 parser.add_argument('--config', default='experiments/cifar10-bl_ca_mu_lb/config.yaml')
 
 

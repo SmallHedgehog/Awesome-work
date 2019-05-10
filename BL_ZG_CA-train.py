@@ -25,7 +25,7 @@ GPU_ID = '4'
 os.environ['CUDA_VISIBLE_DEVICES'] = GPU_ID
 
 
-parser = argparse.ArgumentParser(description='baseline with zero gamma and model tweaks of resnet-d architecture')
+parser = argparse.ArgumentParser(description='zero gamma with resnet32 architecture')
 parser.add_argument('--config', default='experiments/cifar10-bl_zg_ca/config.yaml')
 
 
