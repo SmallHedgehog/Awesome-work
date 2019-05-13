@@ -1,0 +1,40 @@
+batch_size: 128
+workers: 2
+num_classes: 10
+
+max_iter: 400
+
+lr_scheduler:
+  type: STEP
+
+  lr_steps: [39000, 59000]
+  lr_mults: 0.1
+
+  base_lr: 0.1
+
+seed: 1000
+
+momentum: 0.9
+GHM_momentum: 0.75
+weight_decay: 0.0001
+
+# For mixup
+alpha: 1.
+
+# For warmup
+warmup:
+  type: epoch # epoch or iter
+
+  warmup_times: 5
+
+# For zero gamma of all BN layers that sit at the end of a residual block
+zerogamma: True
+
+# For model architecture
+model_type: D
+
+# For label smoothing
+label_smoothing: 0.1
+
+# For decoupled weight decay regularization
+dwdr: True
