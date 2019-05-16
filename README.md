@@ -14,10 +14,11 @@ own applications.
 We modify the GHM-C Loss in this paper for multiple classification problems. [[code](https://github.com/SmallHedgehog/Awesome-work/blob/master/GHM/GHMC_Loss.py)]
 
 ## Image classification
-1. [Bag of Tricks for Image Classification with Convolutional Neural Networks](https://arxiv.org/pdf/1812.01187.pdf)
+1. [Bag of Tricks for Image Classification with Convolutional Neural Networks](https://arxiv.org/pdf/1812.01187.pdf).
+We tested some tricks on the CIFAR10 dataset, see [Experiments on CIFAR10](#Experiments-on-CIFAR10) for more details.
 
 ## Optimization
-1. [ICLR 2019] [Decoupled Weight Decay Regularization](https://arxiv.org/abs/1711.05101) [[code](https://github.com/kashif/pytorch/blob/adamw/torch/optim/adam.py)]
+1. [ICLR 2019] [Decoupled Weight Decay Regularization](https://arxiv.org/abs/1711.05101). [[code](https://github.com/kashif/pytorch/blob/adamw/torch/optim/adam.py)]
 
 ## Experiments on CIFAR10
 image classification tricks on CIFAR10, [refer to](https://arxiv.org/pdf/1812.01187.pdf)[1]
