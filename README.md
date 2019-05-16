@@ -7,12 +7,17 @@ own applications.
 ## Contents
 - [Object detection](#Object-detection)
 - [Image classification](#Image-classification)
+- [Optimization](#Optimization)
 
 ## Object detection
-1. [GHM](https://github.com/libuyu/GHM_Detection/blob/master/mmdetection/mmdet/core/loss/ghm_loss.py)
+1. [AAAI 2019] [Gradient Harmonized Single-stage Detector](https://arxiv.org/abs/1811.05181v1).
+We modify the GHM-C Loss in this paper for multiple classification problems. [[code](https://github.com/SmallHedgehog/Awesome-work/blob/master/GHM/GHMC_Loss.py)]
 
 ## Image classification
-1. [Tricks](https://arxiv.org/pdf/1812.01187.pdf)
+1. [Bag of Tricks for Image Classification with Convolutional Neural Networks](https://arxiv.org/pdf/1812.01187.pdf)
+
+## Optimization
+1. [ICLR 2019] [Decoupled Weight Decay Regularization](https://arxiv.org/abs/1711.05101) [[code](https://github.com/kashif/pytorch/blob/adamw/torch/optim/adam.py)]
 
 ## Experiments on CIFAR10
 image classification tricks on CIFAR10, [refer to](https://arxiv.org/pdf/1812.01187.pdf)[1]
