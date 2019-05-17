@@ -17,6 +17,8 @@ We modify the GHM-C Loss in this paper for multiple classification problems. [[c
 1. [Bag of Tricks for Image Classification with Convolutional Neural Networks](https://arxiv.org/pdf/1812.01187.pdf).
 We tested some tricks on the CIFAR10 dataset, see [Experiments on CIFAR10](#Experiments-on-CIFAR10) for more details.
 
+2. [CVPR 2019] [Selective Kernel Networks](https://arxiv.org/abs/1903.06586). [[code](https://github.com/implus/SKNet)]. [[our impl.](https://github.com/SmallHedgehog/Awesome-work/blob/master/model/SK/SKNet.py)]
+
 ## Optimization
 1. [ICLR 2019] [Decoupled Weight Decay Regularization](https://arxiv.org/abs/1711.05101). [[code](https://github.com/kashif/pytorch/blob/adamw/torch/optim/adam.py)]
 
