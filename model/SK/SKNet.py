@@ -43,18 +43,15 @@ class SKConv(nn.Module):
             self.fcs.append(nn.Linear(self.reduce, in_channels))
 
     def forward(self, x):
-        feats = []
-        for conv in self.convs:
-            feats.append(conv(x))
+        feats = [conv(x) for conv in self.convs]
 
         sum_feats = reduce(lambda x, y: x + y, feats)
         agp_feats = self.GAP(sum_feats).squeeze()
 
         Z_feats = self.fc(agp_feats)
 
-        attention_feats = []
-        for fc in self.fcs:
-            attention_feats.append(fc(Z_feats))
+        attention_feats = [fc(Z_feats) for fc in self.fcs]
+
         attention_feats = torch.cat([feat.unsqueeze(-1) for feat in attention_feats], dim=2)
         soft_attention = self.softmax(attention_feats).unsqueeze(2)
         soft_attention = soft_attention.unsqueeze(2)
