@@ -9,7 +9,7 @@ from functools import reduce
 
 
 class SKConv(nn.Module):
-    def __init__(self, in_channels, stride=1, M=2, G=32, r=16, L=32):
+    def __init__(self, in_channels, out_channels, stride=1, M=2, G=32, r=16, L=32):
         """
         Parameters
         ----------
@@ -23,24 +23,24 @@ class SKConv(nn.Module):
         """
         super(SKConv, self).__init__()
 
-        self.reduce = max(in_channels // r, L)
+        self.reduce = max(out_channels // r, L)
 
         self.convs = nn.ModuleList()
         for idx in range(M):
             self.convs.append(nn.Sequential(
-                nn.Conv2d(in_channels, in_channels, kernel_size=3, stride=stride, padding=1 + idx,
+                nn.Conv2d(in_channels, out_channels, kernel_size=3, stride=stride, padding=1 + idx,
                           dilation=1 + idx, groups=G, bias=False),
-                nn.BatchNorm2d(in_channels),
+                nn.BatchNorm2d(out_channels),
                 nn.ReLU()
             ))
 
         self.GAP = nn.AdaptiveAvgPool2d(output_size=1)
         self.softmax = nn.Softmax(dim=-1)
 
-        self.fc = nn.Linear(in_channels, self.reduce, bias=False)
+        self.fc = nn.Linear(out_channels, self.reduce, bias=False)
         self.fcs = nn.ModuleList()
         for idx in range(M):
-            self.fcs.append(nn.Linear(self.reduce, in_channels, bias=False))
+            self.fcs.append(nn.Linear(self.reduce, out_channels, bias=False))
 
     def forward(self, x):
         feats = [conv(x) for conv in self.convs]

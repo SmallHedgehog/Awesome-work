@@ -1,2 +1,1 @@
-import torchvision.models as M
-
+from .SKNet import SKConv
