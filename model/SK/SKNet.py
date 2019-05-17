@@ -29,7 +29,7 @@ class SKConv(nn.Module):
         for idx in range(M):
             self.convs.append(nn.Sequential(
                 nn.Conv2d(in_channels, in_channels, kernel_size=3, stride=stride, padding=1 + idx,
-                          dilation=1 + idx, groups=G),
+                          dilation=1 + idx, groups=G, bias=False),
                 nn.BatchNorm2d(in_channels),
                 nn.ReLU()
             ))
@@ -37,10 +37,10 @@ class SKConv(nn.Module):
         self.GAP = nn.AdaptiveAvgPool2d(output_size=1)
         self.softmax = nn.Softmax(dim=-1)
 
-        self.fc = nn.Linear(in_channels, self.reduce)
+        self.fc = nn.Linear(in_channels, self.reduce, bias=False)
         self.fcs = nn.ModuleList()
         for idx in range(M):
-            self.fcs.append(nn.Linear(self.reduce, in_channels))
+            self.fcs.append(nn.Linear(self.reduce, in_channels, bias=False))
 
     def forward(self, x):
         feats = [conv(x) for conv in self.convs]
