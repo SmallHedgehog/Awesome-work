@@ -19,7 +19,7 @@ from tricks.training_refinements.Label import LabelSmoothing
 from tricks.training_refinements.Mixup import mixup_data, mixup_criterion
 from DWDR import SGD
 from GHM.GHMC_Loss import GHMC_Loss
-from model.resnet import resnet32
+from model.ResNet import resnet32
 from utils.scheduler import get_scheduler
 from utils.calc_acc import PerClassAccuracy
 

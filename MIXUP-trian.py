@@ -15,7 +15,7 @@ from easydict import EasyDict
 from tensorboardX import SummaryWriter
 
 from tricks.training_refinements.Mixup import mixup_data, mixup_criterion
-from model.resnet import resnet32
+from model.ResNet import resnet32
 from utils.scheduler import get_scheduler
 from utils.calc_acc import PerClassAccuracy
 

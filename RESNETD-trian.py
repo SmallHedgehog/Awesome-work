@@ -14,7 +14,7 @@ import torchvision.transforms as transforms
 from easydict import EasyDict
 from tensorboardX import SummaryWriter
 
-from tricks.model_tweaks.resnet_d import resnet32
+from tricks.model_tweaks.ResNetD import resnet32
 from GHM.GHMC_Loss import GHMC_Loss
 from utils.scheduler import get_scheduler
 from utils.calc_acc import PerClassAccuracy

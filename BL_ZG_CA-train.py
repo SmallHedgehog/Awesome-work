@@ -14,7 +14,7 @@ import torchvision.transforms as transforms
 from easydict import EasyDict
 from tensorboardX import SummaryWriter
 
-from model.resnet import resnet32
+from model.ResNet import resnet32
 from tricks.training_refinements.LR import CosineAnnealing
 from tricks.largebatch_training.ZeroGamma import Zerogamma
 from GHM.GHMC_Loss import GHMC_Loss

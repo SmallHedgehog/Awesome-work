@@ -15,7 +15,7 @@ from easydict import EasyDict
 from tensorboardX import SummaryWriter
 
 from GHM.GHMC_Loss import GHMC_Loss as GHMC_Loss
-from model.resnet import resnet32
+from model.ResNet import resnet32
 from utils.scheduler import get_scheduler
 from utils.calc_acc import PerClassAccuracy
 
