@@ -37,7 +37,6 @@ class PerClassAccuracy(object):
 
             mAP += float(self.classes[key]['correct']) / self.classes[key]['total']
 
-            accu_perclass.append(
-                float(self.classes[key]['correct']) / self.classes[key]['total'])
+            accu_perclass[key] = float(self.classes[key]['correct']) / self.classes[key]['total']
 
         return accu_perclass, float(correct) / total, float(mAP) / len(self.classes.keys())
