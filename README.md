@@ -27,7 +27,7 @@ image classification tricks on CIFAR10, [refer to](https://arxiv.org/pdf/1812.01
 
 |                 **Heuristic**                 |   mAP@1    |    Lift    |
 | :-------------------------------------------: | :--------: | :--------: |
-|                   ResNet32                    |   92.40%   |     BL     |
+|                   ResNet32                    |   92.40%   |     (+0.0, BASELINE)     |
 |              ResNet32+ZeroGamma               |   93.39%   |   +0.99%   |
 |                   ResNet32D                   |   93.06%   |   +0.66%   |
 |              ResNet32D+ZeroGamma              |   93.05%   |   +0.65%   |
