@@ -1,4 +1,4 @@
-Awesome-Work implemented by PyTorch
+Awesome-work implemented by PyTorch
 ========================
 
 This repository aims to reimplement some interesting work and provides examples for self-study and customization in your 
