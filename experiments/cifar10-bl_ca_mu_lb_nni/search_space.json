@@ -1,0 +1,14 @@
+{
+  "base_lr": {
+    "_type": "uniform",
+    "_value": [0.001, 1]
+  },
+  "alpha": {
+    "_type": "uniform",
+    "_value": [0, 1]
+  },
+  "label_smoothing": {
+    "_type": "uniform",
+    "_value": [0, 0.2]
+  }
+}
