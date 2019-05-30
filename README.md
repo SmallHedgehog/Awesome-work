@@ -29,7 +29,7 @@ Our code in [here](https://github.com/SmallHedgehog/Awesome-work/blob/master/BL_
 of [NNI](https://github.com/microsoft/nni) (including search space and config) in [here](https://github.com/SmallHedgehog/Awesome-work/tree/master/experiments/cifar10-bl_ca_mu_lb_nni). 
 
 We test three hyperparameters by NNI toolkit, including learning rate, label smoothing and alpha(for [mixup](https://github.com/SmallHedgehog/Awesome-work/blob/master/MIXUP-trian.py) trick).
-We use RestNet32 architecture with [CosineAnnealing](https://github.com/SmallHedgehog/Awesome-work/blob/master/COSINEANNEAL-train.py), 
+we use RestNet32 architecture with [CosineAnnealing](https://github.com/SmallHedgehog/Awesome-work/blob/master/COSINEANNEAL-train.py), 
 [Mixup](https://github.com/SmallHedgehog/Awesome-work/blob/master/MIXUP-trian.py) and 
 [LabelSmoothing](https://github.com/SmallHedgehog/Awesome-work/blob/master/LABELSMOOTH-train.py) tricks for NNI search, the form of below compares the differents between
 artificial and NNI search hyperparameters, giving the best mAP@1.
