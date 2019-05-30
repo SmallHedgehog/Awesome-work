@@ -31,8 +31,8 @@ of [NNI](https://github.com/microsoft/nni) (including search space and config) i
 We test three hyperparameters by NNI toolkit, including learning rate, label smoothing and alpha(for [mixup](https://github.com/SmallHedgehog/Awesome-work/blob/master/MIXUP-trian.py) trick).
 we use RestNet32 architecture with [CosineAnnealing](https://github.com/SmallHedgehog/Awesome-work/blob/master/COSINEANNEAL-train.py), 
 [Mixup](https://github.com/SmallHedgehog/Awesome-work/blob/master/MIXUP-trian.py) and 
-[LabelSmoothing](https://github.com/SmallHedgehog/Awesome-work/blob/master/LABELSMOOTH-train.py) tricks for training on NNI search expriment, the form of below compares the differents between
-artificial and NNI search hyperparameters, giving the best mAP@1.
+[LabelSmoothing](https://github.com/SmallHedgehog/Awesome-work/blob/master/LABELSMOOTH-train.py) tricks for training like Artificial experiment on NNI search experiment, 
+the form of below compares the differents between artificial and NNI search hyperparameters, giving the best mAP@1.
 
 |                        | Artificial | NNI Search |
 | :--------------------: | :--------: | :--------: |
