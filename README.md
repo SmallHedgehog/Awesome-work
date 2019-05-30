@@ -25,8 +25,8 @@ We tested some tricks on the CIFAR10 dataset, see [Experiments on CIFAR10](#Expe
 
 ## AutoML
 We use [NNI(Neural Network Intelligence)](https://github.com/microsoft/nni) toolkit to search the best hyperparameters(learning rate, label smoothing, etc.) in local machine. 
-Our code in [here](https://github.com/SmallHedgehog/Awesome-work/blob/master/BL_CA_MU_LB_NNI.py) and the [Experiment](https://github.com/SmallHedgehog/Awesome-work/tree/master/experiments/cifar10-bl_ca_mu_lb_nni)
-of [NNI](https://github.com/microsoft/nni) (including search space and config).
+Our code in [here](https://github.com/SmallHedgehog/Awesome-work/blob/master/BL_CA_MU_LB_NNI.py), the **Experiment**
+of [NNI](https://github.com/microsoft/nni) (including search space and config) in [here](https://github.com/SmallHedgehog/Awesome-work/tree/master/experiments/cifar10-bl_ca_mu_lb_nni). 
 
 ## Experiments on CIFAR10
 image classification tricks on CIFAR10, [refer to](https://arxiv.org/pdf/1812.01187.pdf)[1]
