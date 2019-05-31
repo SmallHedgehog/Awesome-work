@@ -36,10 +36,10 @@ the form of below compares the differents between artificial and NNI search hype
 
 |                        | Artificial | NNI Search |
 | :--------------------: | :--------: | :--------: |
-|   init learning rate   |    0.1     | 0.1339448827100801 |
-| alpha(for mixup trick) |    1.0     | 0.24223853906627413 |
-|    label smoothing     |    0.1     | 0.03521136514652663 |
-|         mAP@1          |   94.38%   | 94.39% |
+|   init learning rate   |    0.1     | 0.4888396525811341 |
+| alpha(for mixup trick) |    1.0     | 0.47897353118618013 |
+|    label smoothing     |    0.1     | 0.11541420525458237 |
+|         mAP@1          |   94.38%   | 94.71% |
 
 ## Experiments on CIFAR10
 image classification tricks on CIFAR10, [refer to](https://arxiv.org/pdf/1812.01187.pdf)[1]
